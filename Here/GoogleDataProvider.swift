@@ -39,6 +39,7 @@ class GoogleDataProvider{
             var placesArray = [GooglePlace]()
             if let aData = data {
                 let json = JSON(data:aData, options:JSONSerialization.ReadingOptions.mutableContainers, error:nil)
+                print(json["error_message"])
                 if let results = json["results"].arrayObject as? [[String : AnyObject]] {
                     for rawPlace in results {
                         let place = GooglePlace(dictionary: rawPlace, acceptedTypes: types)

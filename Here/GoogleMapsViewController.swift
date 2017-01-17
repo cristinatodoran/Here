@@ -22,7 +22,7 @@ class GoogleMapsViewController : UIViewController{
     var searchedTypes = ["bakery", "bar", "cafe", "grocery_or_supermarket", "restaurant"]
     let locationManager = CLLocationManager()
     let dataProvider = GoogleDataProvider()
-    let searchRadius: Double = 1000
+    let searchRadius: Double = 10000
     
     
     override func viewDidLoad() {
@@ -69,7 +69,11 @@ class GoogleMapsViewController : UIViewController{
         }
     }
     
-    
+    /*Clear the map of all markers.
+     *Use dataProvider to query Google for nearby places around the searchRadius, filtered to the user’s selected types.
+     *Enumerate through the results returned in the completion closure and create a PlaceMarker for each result.
+     *Set the marker’s map. This line of code is what tells the map to render the marker.    
+     */
     func fetchNearbyPlaces(_ coordinate: CLLocationCoordinate2D) {
         mapView.clear()
         dataProvider.fetchPlacesNearCoordinate(coordinate, radius:searchRadius, types: searchedTypes) { places in
@@ -116,13 +120,17 @@ class GoogleMapsViewController : UIViewController{
             }
         }
     }
-    
+
     // MARK: - GMSMapViewDelegate
     extension GoogleMapsViewController: GMSMapViewDelegate {
         func mapView(_ mapView: GMSMapView!, idleAt position: GMSCameraPosition!) {
             reverseGeocodeCoordinate(position.target)
         }
         
+        /*This checks if the movement originated from a user gesture; 
+         *if so, it un-hides the location pin using the fadeIn(_:) method.
+         *Setting the map’s selectedMarker to nil will remove the currently presented infoView     
+         */
         func mapView(_ mapView: GMSMapView!, willMove gesture: Bool) {
             addressLabel.lock()
             
@@ -131,7 +139,11 @@ class GoogleMapsViewController : UIViewController{
                 mapView.selectedMarker = nil
             }
         }
-        
+        /*First cast the tapped marker to a PlaceMarker.
+         *Next you create a MarkerInfoView from its nib.
+         *Then you apply the place name to the nameLabel.
+         *Check if there’s a photo for the place. If so, add that photo to the info view. If not, add a generic photo instead.
+         */
         func mapView(_ mapView: GMSMapView!, markerInfoContents marker: GMSMarker!) -> UIView! {
             let placeMarker = marker as! PlaceMarker
             
@@ -149,7 +161,7 @@ class GoogleMapsViewController : UIViewController{
                 return nil
             }
         }
-        
+        //This method simply hides the location pin when a marker is tapped
         func mapView(_ mapView: GMSMapView!, didTap marker: GMSMarker!) -> Bool {
             mapCenterPinImage.fadeOut(0.25)
             return false

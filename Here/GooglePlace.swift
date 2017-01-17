@@ -11,6 +11,7 @@ import UIKit
 import Foundation
 import CoreLocation
 import SwiftyJSON
+import Firebase
 
 class GooglePlace {
     let name: String
@@ -19,6 +20,8 @@ class GooglePlace {
     let placeType: String
     var photoReference: String?
     var photo: UIImage?
+    
+  
     
     init(dictionary:[String : AnyObject], acceptedTypes: [String])
     {

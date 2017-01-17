@@ -25,8 +25,6 @@
 		<key>NSAllowsArbitraryLoads</key>
 		<true/>
 	</dict>
-	<key>NSLocationUsageDescription</key>
-	<string> This app lets you keep track of interesting places. It needs access to the GPS coordinates for your location.</string>
 	<key>NSLocationWhenInUseUsageDescription</key>
 	<string> This app lets you keep track of interesting places. It needs access to the GPS coordinates for your location.</string>
 	<key>UILaunchStoryboardName</key>
@@ -43,5 +41,7 @@
 		<string>UIInterfaceOrientationLandscapeLeft</string>
 		<string>UIInterfaceOrientationLandscapeRight</string>
 	</array>
+	<key>UIViewControllerBasedStatusBarAppearance</key>
+	<false/>
 </dict>
 </plist>

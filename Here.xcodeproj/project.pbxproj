@@ -8,6 +8,10 @@
 
 /* Begin PBXBuildFile section */
 		441F2E08F4FE93C429F4F2FC /* Pods_Here.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0C656138A498AB6AC6A62629 /* Pods_Here.framework */; };
+		E0122AD31E2ADB0300A1E3F2 /* Extends.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0122AD21E2ADB0300A1E3F2 /* Extends.swift */; };
+		E0122AD71E2AE97500A1E3F2 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = E0122AD61E2AE97500A1E3F2 /* GoogleService-Info.plist */; };
+		E0122ADB1E2C1A9E00A1E3F2 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0122ADA1E2C1A9E00A1E3F2 /* User.swift */; };
+		E0122ADD1E2C1D7200A1E3F2 /* FavouritePlace.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0122ADC1E2C1D7200A1E3F2 /* FavouritePlace.swift */; };
 		E08677411E21575D0048B689 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E08677401E21575D0048B689 /* AppDelegate.swift */; };
 		E086774B1E21575D0048B689 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E08677491E21575D0048B689 /* LaunchScreen.storyboard */; };
 		E086775D1E215ABE0048B689 /* MarkerInfoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E086775C1E215ABE0048B689 /* MarkerInfoView.swift */; };
@@ -17,15 +21,23 @@
 		E08677681E21633D0048B689 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E08677671E21633D0048B689 /* Images.xcassets */; };
 		E086776B1E2165270048B689 /* GoogleDataProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = E086776A1E2165270048B689 /* GoogleDataProvider.swift */; };
 		E086776D1E21654A0048B689 /* GooglePlace.swift in Sources */ = {isa = PBXBuildFile; fileRef = E086776C1E21654A0048B689 /* GooglePlace.swift */; };
-		E086776F1E21655E0048B689 /* PlaceMarker.swift in Sources */ = {isa = PBXBuildFile; fileRef = E086776E1E21655E0048B689 /* PlaceMarker.swift */; };
 		E08677731E2184B40048B689 /* TableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E08677721E2184B40048B689 /* TableViewController.swift */; };
 		E08677751E2188210048B689 /* MarkerInfoView.xib in Resources */ = {isa = PBXBuildFile; fileRef = E08677741E2188210048B689 /* MarkerInfoView.xib */; };
+		E08677771E21A9E20048B689 /* PlaceMarker.swift in Sources */ = {isa = PBXBuildFile; fileRef = E08677761E21A9E20048B689 /* PlaceMarker.swift */; };
+		E086777B1E21B6620048B689 /* Podfile in Resources */ = {isa = PBXBuildFile; fileRef = E086777A1E21B6620048B689 /* Podfile */; };
+		E0F14E2F1E2D506E003F18B1 /* OnlineUsersTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0F14E2E1E2D506E003F18B1 /* OnlineUsersTableViewController.swift */; };
+		E0F14E311E2D508D003F18B1 /* FavouritePlacesTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0F14E301E2D508D003F18B1 /* FavouritePlacesTableViewController.swift */; };
+		E0F14E341E2D7A32003F18B1 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0F14E331E2D7A32003F18B1 /* LoginViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		0C656138A498AB6AC6A62629 /* Pods_Here.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Here.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		236AEB8B2E22063EA83B0726 /* Pods-Here.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Here.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Here/Pods-Here.debug.xcconfig"; sourceTree = "<group>"; };
 		70B2956ADD29787E28649435 /* Pods-Here.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Here.release.xcconfig"; path = "Pods/Target Support Files/Pods-Here/Pods-Here.release.xcconfig"; sourceTree = "<group>"; };
+		E0122AD21E2ADB0300A1E3F2 /* Extends.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Extends.swift; sourceTree = "<group>"; };
+		E0122AD61E2AE97500A1E3F2 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		E0122ADA1E2C1A9E00A1E3F2 /* User.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
+		E0122ADC1E2C1D7200A1E3F2 /* FavouritePlace.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FavouritePlace.swift; sourceTree = "<group>"; };
 		E086773D1E21575D0048B689 /* Here.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Here.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E08677401E21575D0048B689 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		E086774A1E21575D0048B689 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -38,9 +50,14 @@
 		E08677671E21633D0048B689 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		E086776A1E2165270048B689 /* GoogleDataProvider.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GoogleDataProvider.swift; sourceTree = "<group>"; };
 		E086776C1E21654A0048B689 /* GooglePlace.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GooglePlace.swift; sourceTree = "<group>"; };
-		E086776E1E21655E0048B689 /* PlaceMarker.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PlaceMarker.swift; sourceTree = "<group>"; };
 		E08677721E2184B40048B689 /* TableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TableViewController.swift; sourceTree = "<group>"; };
 		E08677741E2188210048B689 /* MarkerInfoView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MarkerInfoView.xib; sourceTree = "<group>"; };
+		E08677761E21A9E20048B689 /* PlaceMarker.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PlaceMarker.swift; sourceTree = "<group>"; };
+		E086777A1E21B6620048B689 /* Podfile */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Podfile; sourceTree = "<group>"; };
+		E0F14E2E1E2D506E003F18B1 /* OnlineUsersTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OnlineUsersTableViewController.swift; sourceTree = "<group>"; };
+		E0F14E301E2D508D003F18B1 /* FavouritePlacesTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FavouritePlacesTableViewController.swift; sourceTree = "<group>"; };
+		E0F14E321E2D5735003F18B1 /* Here.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; name = Here.entitlements; path = Here/Here.entitlements; sourceTree = "<group>"; };
+		E0F14E331E2D7A32003F18B1 /* LoginViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -67,6 +84,7 @@
 		E08677341E21575D0048B689 = {
 			isa = PBXGroup;
 			children = (
+				E0F14E321E2D5735003F18B1 /* Here.entitlements */,
 				E08677561E2159E80048B689 /* Here-Application */,
 				E086773E1E21575D0048B689 /* Products */,
 				D8004EECC95113C8B2BA5518 /* Pods */,
@@ -85,7 +103,8 @@
 		E086773F1E21575D0048B689 /* Here */ = {
 			isa = PBXGroup;
 			children = (
-				E08677691E21650B0048B689 /* main */,
+				E0122AD21E2ADB0300A1E3F2 /* Extends.swift */,
+				E08677691E21650B0048B689 /* models */,
 				E08677571E215A400048B689 /* controllers */,
 				E08677551E2159E10048B689 /* views */,
 				E08677401E21575D0048B689 /* AppDelegate.swift */,
@@ -94,6 +113,7 @@
 				E086774C1E21575D0048B689 /* Info.plist */,
 				E08677521E2158A60048B689 /* Here-Bridging-Header.h */,
 				E08677671E21633D0048B689 /* Images.xcassets */,
+				E086777A1E21B6620048B689 /* Podfile */,
 			);
 			path = Here;
 			sourceTree = "<group>";
@@ -111,6 +131,7 @@
 		E08677561E2159E80048B689 /* Here-Application */ = {
 			isa = PBXGroup;
 			children = (
+				E0122AD61E2AE97500A1E3F2 /* GoogleService-Info.plist */,
 				E086773F1E21575D0048B689 /* Here */,
 			);
 			name = "Here-Application";
@@ -119,20 +140,25 @@
 		E08677571E215A400048B689 /* controllers */ = {
 			isa = PBXGroup;
 			children = (
+				E0F14E331E2D7A32003F18B1 /* LoginViewController.swift */,
+				E0F14E301E2D508D003F18B1 /* FavouritePlacesTableViewController.swift */,
+				E0F14E2E1E2D506E003F18B1 /* OnlineUsersTableViewController.swift */,
 				E08677601E215EBF0048B689 /* GoogleMapsViewController.swift */,
 				E08677721E2184B40048B689 /* TableViewController.swift */,
 			);
 			name = controllers;
 			sourceTree = "<group>";
 		};
-		E08677691E21650B0048B689 /* main */ = {
+		E08677691E21650B0048B689 /* models */ = {
 			isa = PBXGroup;
 			children = (
 				E086776A1E2165270048B689 /* GoogleDataProvider.swift */,
+				E08677761E21A9E20048B689 /* PlaceMarker.swift */,
 				E086776C1E21654A0048B689 /* GooglePlace.swift */,
-				E086776E1E21655E0048B689 /* PlaceMarker.swift */,
+				E0122ADA1E2C1A9E00A1E3F2 /* User.swift */,
+				E0122ADC1E2C1D7200A1E3F2 /* FavouritePlace.swift */,
 			);
-			name = main;
+			name = models;
 			sourceTree = "<group>";
 		};
 		EFEF5E0AC10EA1161AD07315 /* Frameworks */ = {
@@ -178,8 +204,14 @@
 				TargetAttributes = {
 					E086773C1E21575D0048B689 = {
 						CreatedOnToolsVersion = 8.1;
+						DevelopmentTeam = PFR4ACFVE4;
 						LastSwiftMigration = 0810;
 						ProvisioningStyle = Automatic;
+						SystemCapabilities = {
+							com.apple.Keychain = {
+								enabled = 1;
+							};
+						};
 					};
 				};
 			};
@@ -206,10 +238,12 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E086777B1E21B6620048B689 /* Podfile in Resources */,
 				E08677751E2188210048B689 /* MarkerInfoView.xib in Resources */,
 				E08677661E2161090048B689 /* Main.storyboard in Resources */,
 				E08677681E21633D0048B689 /* Images.xcassets in Resources */,
 				E086774B1E21575D0048B689 /* LaunchScreen.storyboard in Resources */,
+				E0122AD71E2AE97500A1E3F2 /* GoogleService-Info.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -268,13 +302,19 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E0F14E341E2D7A32003F18B1 /* LoginViewController.swift in Sources */,
 				E086775F1E215ADC0048B689 /* UIViewExtension.swift in Sources */,
 				E086776B1E2165270048B689 /* GoogleDataProvider.swift in Sources */,
 				E08677611E215EBF0048B689 /* GoogleMapsViewController.swift in Sources */,
+				E08677771E21A9E20048B689 /* PlaceMarker.swift in Sources */,
+				E0F14E311E2D508D003F18B1 /* FavouritePlacesTableViewController.swift in Sources */,
 				E086775D1E215ABE0048B689 /* MarkerInfoView.swift in Sources */,
-				E086776F1E21655E0048B689 /* PlaceMarker.swift in Sources */,
 				E086776D1E21654A0048B689 /* GooglePlace.swift in Sources */,
+				E0122AD31E2ADB0300A1E3F2 /* Extends.swift in Sources */,
+				E0122ADD1E2C1D7200A1E3F2 /* FavouritePlace.swift in Sources */,
+				E0122ADB1E2C1A9E00A1E3F2 /* User.swift in Sources */,
 				E08677731E2184B40048B689 /* TableViewController.swift in Sources */,
+				E0F14E2F1E2D506E003F18B1 /* OnlineUsersTableViewController.swift in Sources */,
 				E08677411E21575D0048B689 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -398,6 +438,8 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_ENTITLEMENTS = Here/Here.entitlements;
+				DEVELOPMENT_TEAM = PFR4ACFVE4;
 				INFOPLIST_FILE = Here/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = cristinatodoran.Here;
@@ -414,6 +456,8 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_ENTITLEMENTS = Here/Here.entitlements;
+				DEVELOPMENT_TEAM = PFR4ACFVE4;
 				INFOPLIST_FILE = Here/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = cristinatodoran.Here;
